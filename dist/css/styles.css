@@ -76,6 +76,20 @@
   }
 }
 
+#main-header {
+  background: #7e89a3 !important;
+  color: white !important;
+  text-align: center !important;
+  padding: 3em 0 !important;
+  
+}
+
+header {
+  background-image: url("/dist/assets/ImagenInmobiliaria.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -235,8 +249,9 @@ sup {
 }
 
 a {
-  color: #0d6efd;
+  color: #50c5ab;
   text-decoration: underline;
+  margin: 5px 5px 5px 5px;
 }
 a:hover {
   color: #0a58ca;
@@ -331,11 +346,14 @@ th {
 
 label {
   display: inline-block;
+  margin: 0.3em 0.3em ;
+  color: #515151;
 }
 
 button {
   border-radius: 0;
 }
+
 
 button:focus:not(:focus-visible) {
   outline: 0;
@@ -350,6 +368,22 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  color: #515151;
+}
+
+.ancho100 {
+  width: 100%;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+  padding: 0.5em 1em;
+  border: 0.0625rem solid #d7dbe6;
+  border-radius: 0.2em;
+  background: #f6f6f8;
 }
 
 button,
@@ -363,6 +397,11 @@ select {
 
 select {
   word-wrap: normal;
+  padding: 0.5em 2em;
+  border: 0.0625rem solid #d7dbe6;
+  border-radius: 0.2em;
+  color: #515151;
+  background: #f6f6f8;
 }
 select:disabled {
   opacity: 1;
@@ -377,7 +416,15 @@ button,
 [type=reset],
 [type=submit] {
   -webkit-appearance: button;
+border-radius: 5em;
+margin-left: 0.3125rem;
+margin-right: 0.3125rem;
+background: #50c5ab;
+padding: 0.5em 2em;
+border: 0.0625rem solid #50c5ab;
+color: white;
 }
+
 button:not(:disabled),
 [type=button]:not(:disabled),
 [type=reset]:not(:disabled),
@@ -391,7 +438,11 @@ button:not(:disabled),
 }
 
 textarea {
-  resize: vertical;
+  padding: 0.5em 2em;
+  border: 0.0625rem solid #d7dbe6;
+  border-radius: 0.2em;
+  color: #515151;
+  background: #f6f6f8
 }
 
 fieldset {
@@ -639,6 +690,14 @@ progress {
   margin-right: auto;
   margin-left: auto;
 }
+.container{
+  max-width: 75rem;
+}
+
+.container.page-content{
+  max-width: 46.25rem;
+  color: grey;
+}
 
 @media (min-width: 576px) {
   .container-sm, .container {
@@ -670,7 +729,7 @@ progress {
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-top: 1rem;
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
@@ -3030,13 +3089,19 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  border-color: #50c5ab;
+  margin-left: 0.3125rem;
+  margin-right: 0.3125rem;
+  margin-bottom: 1rem;
+
+  background: #50c5ab;
+  padding: 0.5em 2em;
+  border: 0.0625rem solid #50c5ab;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #0b5ed7;
-  border-color: #0a58ca;
+  background-color: grey;
+  border-color: grey;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
