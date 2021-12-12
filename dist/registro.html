@@ -38,53 +38,38 @@
 
         <div class="container">
         <form class="row g-3 needs-validation" novalidate>
-            <div class="col-md-4">
-              <label for="validationCustom01" class="form-label">Nombres</label>
-              <input type="text" class="form-control" id="validationCustom01" required>
-              <div class="valid-feedback">
-                Looks good!
-              </div>
-            </div>
-            <div class="col-md-4">
-              <label for="validationCustom02" class="form-label">Apellidos</label>
-              <input type="text" class="form-control" id="validationCustom02" required>
-              <div class="valid-feedback">
-                Looks good!
-              </div>
-            </div>
-            <div class="col-md-4">
-              <label for="validationCustomUsername" class="form-label">Correo electrónico</label>
-              <div class="input-group has-validation">
-                <span class="input-group-text" id="inputGroupPrepend">@</span>
-                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-                <div class="invalid-feedback">
-                  Please choose a username.
-                </div>
+            <div class="col-md-6">
+              <label for="txtNombres" class="form-label">Nombres</label>
+              <input type="text" class="form-control is-valid" id="txtNombres" required>
+              <div class="invalid-feedback">
+                Campo requerido.
               </div>
             </div>
             <div class="col-md-6">
-              <label for="validationCustom03" class="form-label">Celular</label>
-              <input type="text" class="form-control is-valid" id="validationCustom03" required>
+              <label for="txtApellidos" class="form-label">Apellidos</label>
+              <input type="text" class="form-control is-valid" id="txtApellidos" required>
               <div class="invalid-feedback">
-                Campo requerido
+                Campo requerido.
               </div>
             </div>
-            <div class="col-md-3">
-              <label for="validationCustom04" class="form-label">Contraseña</label>
-              <input type="password" id="validationCustom04" required>
-                
-              </select>
+            <div class="col-md-6">
+              <label for="txtCelular" class="form-label">Celular</label>
+              <input type="text" class="form-control is-valid" id="txtCelular" required>
               <div class="invalid-feedback">
-                Please select a valid state.
+                Campo requerido.
               </div>
             </div>
-            <div class="col-md-3">
-              <label for="validationCustom05" class="form-label">Repita contraseña</label>
-              <input type="password" class="form-control" id="validationCustom05" required>
-              <div class="invalid-feedback">
-                Please provide a valid zip.
+            <div class="col-md-6">
+              <label for="txtCorreo" class="form-label">Correo electrónico</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                <input type="text" class="form-control is-valid" id="txtCorreo" aria-describedby="inputGroupPrepend" required>
+                <div class="invalid-feedback">
+                  Campo requerido.
+                </div>
               </div>
             </div>
+            
             <div class="col-12">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
