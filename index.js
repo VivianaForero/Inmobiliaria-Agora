@@ -1,11 +1,14 @@
 //npm run start2 es un script me permite usar nodemon para no estar reiniciando el servr, el script est en index.js
-const path = require ('path')
-const express = require('express')
-const app = new express()
+const path = require ('path');
+const express = require('express');
+const app = express();
+//const createUserController = require('./controllers/createUser');
+//const expressEdge = require('express-edge');
 
 //le indica a express que la carpeta con los assets sera public
 app.use(express.static('public'))
-
+//app.use(expressEdge)
+//app.set('views', `${__dirname}/views`);
 
 // request y response 
 
