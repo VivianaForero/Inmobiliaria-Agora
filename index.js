@@ -4,6 +4,7 @@ const express = require('express');
 const app = express();
 //const createUserController = require('./controllers/createUser');
 //const expressEdge = require('express-edge');
+const createUserController = require('./controllers/storeUserController')
 
 //le indica a express que la carpeta con los assets sera public
 app.use(express.static('public'))
@@ -33,6 +34,7 @@ app.get('/contacto.html',(req,res) =>{
     res.sendfile(path.resolve(__dirname,'pages/contacto.html'))
 })
 
+app.post('/registro.html',storeUserController);
 
 app.listen(4000,()=>{
     console.log('app listening on port 4000')
