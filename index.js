@@ -10,5 +10,27 @@ app.use(express.static('public'))
 // request y response 
 
 app.get('/',(req,res) =>{
-    res.sendfile(path.resolve(__dirname,'dist/index.html'))
+    res.sendfile(path.resolve(__dirname,'pages/index.html'))
+})
+app.get('/index.html',(req,res) =>{
+    res.sendfile(path.resolve(__dirname,'pages/index.html'))
+})
+
+app.get('/Nosotros.html',(req,res) =>{
+    res.sendfile(path.resolve(__dirname,'pages/Nosotros.html'))
+})
+
+app.get('/login.html',(req,res) =>{
+    res.sendfile(path.resolve(__dirname,'pages/login.html'))
+})
+app.get('/registro.html',(req,res) =>{
+    res.sendfile(path.resolve(__dirname,'pages/registro.html'))
+})
+app.get('/contacto.html',(req,res) =>{
+    res.sendfile(path.resolve(__dirname,'pages/contacto.html'))
+})
+
+
+app.listen(4000,()=>{
+    console.log('app listening on port 4000')
 })
