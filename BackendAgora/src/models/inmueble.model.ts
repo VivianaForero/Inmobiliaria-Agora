@@ -20,6 +20,12 @@ export class Inmueble extends Entity {
     type: 'string',
     required: true,
   })
+  imagen: string;
+
+  @property({
+    type: 'string',
+    required: true,
+  })
   tipoInmueble: string;
 
   @property({

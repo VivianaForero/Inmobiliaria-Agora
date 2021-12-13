@@ -11,7 +11,7 @@ export class Solicitud extends Entity {
   id?: string;
 
   @property({
-    type: 'string',
+    type: 'date',
     required: true,
   })
   fecha: string;
